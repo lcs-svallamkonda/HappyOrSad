@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     //MARK: Properties
-    
+    @IBOutlet weak var enteredMessage: UITextField!
+   
     //MARK: Initializers
     
     //MARK: Methods
