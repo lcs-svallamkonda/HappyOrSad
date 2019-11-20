@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     
     //MARK: Properties
     @IBOutlet weak var enteredMessage: UITextField!
-   
+    @IBOutlet weak var displayedText: UILabel!
+    
     //MARK: Initializers
     
     //MARK: Methods
@@ -21,7 +22,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    //Analyze text provided
+    @IBAction func analyzeText(_ sender: Any) {
+    }
+    
 }
 
