@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     //Analyze text provided
     @IBAction func analyzeText(_ sender: Any) {
         
+        //Clear out the output label from the last time the Analyze button was pressed
+        displayedText.text = ""
+        
         //Guard against no input
         guard let enteredMessage = enteredMessageField.text, enteredMessage.count > 0  else {
             displayedText.text = "Please enter a phrase to analyze."
