@@ -41,7 +41,11 @@ class ViewController: UIViewController {
             return
         }
         
+        for singleCharacter in enteredMessage {
+        }
     }
     
 }
+
+
 
