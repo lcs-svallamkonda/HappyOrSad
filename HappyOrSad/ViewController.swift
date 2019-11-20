@@ -32,6 +32,12 @@ class ViewController: UIViewController {
             return
         }
         
+        //Make sure input is not too long
+        guard enteredMessage.count <= 255 else {
+            displayedText.text = "Please enter a phrase with 255 characters or less."
+            return
+        }
+        
     }
     
 }
