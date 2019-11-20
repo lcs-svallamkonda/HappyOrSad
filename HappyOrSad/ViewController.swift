@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     //MARK: Properties
-    @IBOutlet weak var enteredMessage: UITextField!
+    @IBOutlet weak var enteredMessageField: UITextField!
     @IBOutlet weak var displayedText: UILabel!
     
     //MARK: Initializers
@@ -25,6 +25,13 @@ class ViewController: UIViewController {
     
     //Analyze text provided
     @IBAction func analyzeText(_ sender: Any) {
+        
+        //Guard against no input
+        guard let enteredMessage = enteredMessageField.text, enteredMessage.count > 0  else {
+            displayedText.text = "Please enter a phrase to analyze."
+            return
+        }
+        
     }
     
 }
