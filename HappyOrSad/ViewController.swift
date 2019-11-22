@@ -41,7 +41,19 @@ class ViewController: UIViewController {
             return
         }
         
+        //create constants to count happy and sad emojis
+        var happyCount = 0
+        var sadCount = 0
+        
+        //iterate over every character in message
         for singleCharacter in enteredMessage {
+            
+            //find the emojis
+            if singleCharacter = "😃" || "😊" || "🙂" {
+                happyCount += 1
+            } else if singleCharacter = {
+                sadCount += 1
+            }
         }
     }
     
