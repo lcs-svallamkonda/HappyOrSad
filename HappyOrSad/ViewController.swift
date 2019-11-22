@@ -49,10 +49,12 @@ class ViewController: UIViewController {
         for singleCharacter in enteredMessage {
             
             //find the emojis
-            if var singleCharacter = "😃" || "😊" || "🙂" || "😄" {
+            switch singleCharacter{
+            case "😃", "😊", "🙂", "😄" :
                 happyCount += 1
-            } else if singleCharacter = "☹" || "🙁" || "😕" || "😔" {
+            case  "☹", "🙁", "😕", "😔" :
                 sadCount += 1
+            default: print("")
             }
         }
     }
