@@ -57,6 +57,16 @@ class ViewController: UIViewController {
             default: print("")
             }
         }
+        
+        //Make label project results
+        if happyCount > sadCount {
+            displayedText.text = "happy"
+        } else if happyCount < sadCount {
+            displayedText.text = "sad"
+        } else {
+            displayedText.text = "none"
+        }
+        
     }
     
 }
