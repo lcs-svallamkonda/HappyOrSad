@@ -63,6 +63,8 @@ class ViewController: UIViewController {
             displayedText.text = "happy"
         } else if happyCount < sadCount {
             displayedText.text = "sad"
+        } else if happyCount > 0 || sadCount > 0 {
+            displayedText.text = "unsure"
         } else {
             displayedText.text = "none"
         }
