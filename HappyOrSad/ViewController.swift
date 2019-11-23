@@ -31,13 +31,13 @@ class ViewController: UIViewController {
         
         //Guard against no input
         guard let enteredMessage = enteredMessageField.text, enteredMessage.count > 0  else {
-            displayedText.text = "Please enter a phrase to analyze."
+            displayedText.text = "Please enter a phrase at least 1 and no more than 255 characters."
             return
         }
         
         //Make sure input is not too long
         guard enteredMessage.count <= 255 else {
-            displayedText.text = "Please enter a phrase with 255 characters or less."
+            displayedText.text = "Please enter a phrase at least 1 and no more than 255 characters."
             return
         }
         
