@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         //iterate over every character in message
         for singleCharacter in enteredMessage {
             
-            //find the emojis
+            //find the emojis in the message
             switch singleCharacter{
             case "😃", "😊", "🙂", "😄" :
                 happyCount += 1
